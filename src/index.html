@@ -1,0 +1,14 @@
+<script src="/socket.io/socket.io.js"></script>
+<div class="tweet-list"></div>
+<script>
+  var tweets = [];
+  var socket = io.connect('/');
+  socket.on('tweet', function (data) {
+    tweets.push(data.message);
+    console.log('Got tweet:', data.message);
+    console.log('Tweets so far:', tweets.length);
+    var innerDiv = document.createElement('div');
+    innerDiv.innerHTML = data.message;
+    document.querySelector('.tweet-list').appendChild(innerDiv);
+  });
+</script>

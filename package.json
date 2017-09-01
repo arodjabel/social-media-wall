@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "chalk": "^2.1.0",
+    "express": "^4.15.4",
+    "http": "^0.0.0",
+    "socket.io": "^2.0.3",
+    "twitter": "^1.7.1"
+  },
+  "name": "social-media-wall",
+  "description": "social media wall for my wedding",
+  "version": "1.0.0",
+  "main": "const.config.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arodjabel/social-media-wall.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arodjabel/social-media-wall/issues"
+  },
+  "homepage": "https://github.com/arodjabel/social-media-wall#readme"
+}
