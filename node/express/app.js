@@ -23,6 +23,9 @@ const client = new Twitter({
 
 const streamFilter = function(tweet) {
   console.log(tweet.user.screen_name, ' : ' , tweet.text);
+  if(!socket){
+    return;
+  }
   socket.emit('tweet', { message: tweet.user.screen_name + ' : ' + tweet.text });
 };
 
