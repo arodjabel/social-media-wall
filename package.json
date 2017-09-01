@@ -13,7 +13,8 @@
   "devDependencies": {},
   "scripts": {
     "start": "node ./node/express/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "rm package.zip && zip package.zip `echo config/config.json; git ls-tree --full-tree -r HEAD | awk '{print $4}' && eb deploy"
   },
   "repository": {
     "type": "git",
