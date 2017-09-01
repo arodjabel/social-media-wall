@@ -10,3 +10,4 @@
 /.elasticbeanstalk/
 /package/
 /package.zip
+!/.elasticbeanstalk/
