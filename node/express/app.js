@@ -9,7 +9,7 @@ const env = require('../../const.config');
 const streamError = require('../twitter/streamError');
 
 const streamParameters = {
-  track: 'throwbackthursday'
+  track: 'friday'
 };
 const port = process.env.PORT || 3000;
 let socket;
