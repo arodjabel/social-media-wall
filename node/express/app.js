@@ -11,7 +11,7 @@ const streamError = require('../twitter/streamError');
 const streamParameters = {
   track: 'throwbackthursday'
 };
-
+const port = process.env.PORT || 3000;
 let socket;
 
 const client = new Twitter({
@@ -42,4 +42,4 @@ app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, '../../src/index.html'));
 });
 
-server.listen(8080);
+server.listen(port);
